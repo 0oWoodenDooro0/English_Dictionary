@@ -8,7 +8,7 @@ class GetDictionaryUseCase {
         val meanings = dict.meanings
         for (meaning in meanings) {
             for (definition in meaning.definitions) {
-                definitions += "意思：" + definition.definition + "\n"
+                definitions += "定義：" + definition.definition + "\n"
                 if (definition.example != null) {
                     definitions += "範例：" + definition.example + "\n"
                 }
